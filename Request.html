@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Request</title>
+	<header style="background-color: rgb(230,247,255);">
+		<center>
+			<a href="home.html" style="color: rgb(255,165,0);"><label> | Home |</label></a>
+			<a href="Profile.html" style="color: rgb(255,165,0);"><label>Profile |</label></a>
+			<a href="Request.html" style="color: rgb(255,165,0);"><label>Request |</label></a>
+			<a href="Response.html" style="color: rgb(255,165,0);"><label>Response |</label></a>
+			<a href="home.html" style="color: rgb(255,165,0);"><label>Logout |</label></a>
+			<br><br>
+		</center>
+	</header>
+</head>
+<body style="background-color: rgb(204,242,255);">
+	<center><h1>Apply Complaint</h1></center>
+	<form>
+		<table align="center" >
+			<tr>
+				<td>Citizen name :</td>
+				<td> <input type="text" id="cname" name="cname" required="required"></td>
+			</tr>
+			<tr>
+				<td>Age :</td>
+				<td><input type="number" id="age" name="age"></td>
+			</tr>
+			<tr>
+				<td>Address :</td>
+				<td><textarea id="tar1"></textarea></td>
+
+			</tr>
+			<tr>
+				<td>Email Id:</td>
+				<td><input type="Email" id="email" name="email" required="required"></td>
+			</tr>
+			<tr>
+				<td>District :</td>
+				<td>
+					<select id = "dist" name="dist">
+						<option value="Surat">Surat</option>
+						<option value="Ahemdabaad"> Ahemdabad</option>
+						<option value="Baroda">Baroda</option>
+
+					</select>
+
+				</td>
+			</tr>
+			<tr>
+				<td>Enter the complaint :</td>
+				<td><textarea id="complaint"></textarea></td>
+			</tr>
+			<tr>
+				<td>Pincode :</td>
+				<td><input type="number" id="pin" required="required" pattern="./{6}" name="pin"></td>
+			</tr>
+			<tr>
+				<td>Phone Number :</td>
+				<td><input type="number" required="required" pattern=".{10}" id="phn" name="phn"></td>
+			</tr>
+			<tr></tr>
+			<tr>
+				<td></td>
+				<td colspan="1"><input type="Button" id="Apply" name="Apply" value="Apply"></td>
+			</tr>
+
+		</table>
+
+	</form>
+
+
+</body>
+</html>

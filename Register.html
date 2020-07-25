@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register page</title>
+	<header>
+		<center>
+		<a href="Login.html" style="color: rgb(255,165,0);"><label>Back |</label></a>
+		<a href="Register.html" style="color: rgb(255,165,0);"><label>Register</label>
+		</center></a>
+	</header><br><br><br>
+</head>
+<body style="background-color: rgb(204,242,255);">
+	<center> <h1>Register Here</h1></center>
+	<form action="#">
+		<table align="center" border="0">
+			<tr>
+				<td>Registration Number :</td>
+				<td><input type="text" name="r_no" required="required" id="r_no"></td>
+			</tr>
+			<tr>
+				<td>Citizen Name : </td>
+				<td><input type="text" name="uname" required="required" id="uname"></td>
+
+			</tr>
+			<tr>
+				<td>Password :</td>
+				<td><input type="Password" name="ps1" required="required" id="ps1" pattern="/.{8,12}"></td>
+			</tr>
+			<tr>
+				<td>Confirm Password :</td>
+				<td><input type="Password" id="ps2" name="ps2" required="required" pattern=".{8,12}"></td>
+			</tr>
+			<tr>
+				<td>Email Id :</td>
+				<td><input type="Email" name="email" required="required" placeholder="abc@gmail.com" id="email"></td>
+			</tr>
+			<tr>
+				<td>Contact Number : </td>
+				<td><input type="Number" name="phnno" required="required" id="phnno" pattern=".{10}"></td>
+			</tr>
+			<tr>
+				<td>Address :</td>
+				<td><textarea id="txtara"></textarea></td>
+			</tr>
+			<tr>
+				<td>Gender : </td>
+				<td><input type="radio" name="gen" id="gen" value="Male" checked="Male">Male<br><input type="radio" name="gen" id="gen"value = "Female" >Female</td>
+			</tr>
+			<tr></tr>
+			<tr>
+				<td></td>
+				<td colspan="2"><input type="button" value = "Submit" id="Submit" name="button"></td>
+			</tr>
+		</table>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+	<header align="center"  style="background-color: rgb(255,255,179);">
+
+		<a href="home.html"  style="color: rgb(255,165,0);" ><label>|  Home  |</label></a>
+		<a href="About us.html"  style="color: rgb(255,165,0);"><label>  About Us |</label></a>
+		<a href="Login.html"  style="color: rgb(255,165,0);"><label>  Login |</label></a>
+		<a href="#"  style="color: rgb(255,165,0);"><label>  Contact us |</label></a>
+
+	</header>
+</head>
+<body  style="background-color: rgb(204,242,255);">
+	<form action="#">
+		<table align="center" >
+			<tr>
+				<td>Authentication :</td>
+				<td><input type="text" id="admin" name="admin" required="required"></td>
+			</tr>
+			<tr>
+				<td>Department :</td>
+				<td>
+					<select id = "dept" name="dept">
+						<option value="Admin">Admin</option>
+						<option value="Electricity "> Electricity</option>
+						<option value="Water">Water</option>
+
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Password :</td>
+				<td><input type="Password" id = "pass" name="pass" required="required" pattern=".{8,12}"></td>
+			</tr>
+			<tr></tr>
+			<tr>
+				<td></td>
+				<td><input type="button"  id = "login" value="Login" name="login"></td>
+			</tr>
+
+		</table>
+
+	</form>
+
+</body>
+</html>
