@@ -29,5 +29,7 @@ h1:hover
 button:hover{
 	color : #0040ff;
 	background : rgb(204,242,255);
+	border :1px solid #3949AB;
 }
+
 

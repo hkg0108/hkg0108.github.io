@@ -12,15 +12,12 @@
 </head>
 <body >
 	<center> <h1>Register Here</h1></center>
-	<form action="#">
+	<form action=#>
 		<table align="center" border="0">
-			<tr>
-				<td>Registration Number :</td>
-				<td><input type="text" name="r_no" required="required" id="r_no"></td>
-			</tr>
+
 			<tr>
 				<td>Citizen Name : </td>
-				<td><input type="text" name="uname" required="required" id="uname"></td>
+				<td><input type="text" name="uname" required="required" id="uname" ></td>
 
 			</tr>
 			<tr>
@@ -50,9 +47,24 @@
 			<tr></tr>
 			<tr>
 				<td></td>
-				<td colspan="2"><input type="button" value = "Submit" id="Submit" name="button"></td>
+				<td colspan="2"><button type="button" onclick="Pass()">Submit</button></td>
 			</tr>
 		</table>
+		<br>
+		<br>
+		<table border="2" id="show" align="Center">
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Phone Number</th>
+				<th>Adress</th>
+				<th>Gender</th>
+			</tr>
+
+
+		</table>
+
+<script src="Reg.js"></script>
 </form>
 
 </body>

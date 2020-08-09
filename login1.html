@@ -2,43 +2,47 @@
 <html>
 <head>
 	<title>Citizen Login</title>
-	<link rel="stylesheet" type="text/css" href="Register.css">
+	<link rel="stylesheet" type="text/css" href="login1.css">
 	<header ><center>
-	<a href="home.html"><label>| Home |</label></a>
+	<a href="index.html"><label>| Home |</label></a>
 	<a href="login1.html" ><label>Citizen Login |</label></a>
 	<a href="Login.html"><label>Back |</label></a>
 	<br><br>
 
 	</center>
 	</header>
+	<script type="text/javascript" src="validat.js"></script>
+
 </head>
 <body >
+
 	<center><h1>Citizen Login</h1></center>
-<form action="#">
+<form action="Profile.html" method="post" name="form" onsubmit="return validateForm()">
 	<table align="center">
 
 		<tr>
-			<td>Citizen Number :</td>
-			<td><input type="text" name="cnum" required="required" id="cnum"></td>
+			<td>Citizen Reg_Number:</td>
+			<td><input type="text" name="cnum"  id="cnum">
+			<br>
+
 		</tr>
 		<tr>
 			<td>Citizen name :</td>
-			<td><input type="text" required="required" name="cname" id="cname"></td>
+			<td><input type="text"  name="cname" id="cname"><br>
+
 		</tr>
 		<tr>
 			<td>Password :</td>
-			<td><input type="Password" id="ps" required="required" pattern=".{8,12}" name="ps"></td>
+			<td><input type="Password" id="ps" name="ps"   >
+			<br>
 		</tr>
 		<tr></tr>
 		<tr>
-			<td colspan="1"><input type="button" name="login" id="login" value="Login"></td>
-			<td colspan="2"><input type="button" id="clear" name="clear" value="Clear"></td>
+			<td></td>
+			<td ><button type="submit">Login</button></td>
 		</tr>
 
 	</table>
-
-
 </form>
-
 </body>
 </html>

@@ -5,20 +5,22 @@
 	<link rel="stylesheet" type="text/css" href="Register.css">
 	<header align="center" >
 
-		<a href="home.html"   ><label>|  Home  |</label></a>
+		<a href="index.html"   ><label>|  Home  |</label></a>
 		<a href="About us.html"  ><label>  About Us |</label></a>
 		<a href="Login.html"  ><label>  Login |</label></a>
 		<a href="Contactus.html"  ><label>  Contact us |</label></a>
 
 	</header>
+
+	<script type="text/javascript" src="validadmin.js"></script>
 </head>
-<body  >
+<body >
 	<center><h1>Admin</h1></center>
-	<form action="#">
-		<table align="center" >
+	<form action="Adminhome.html" method="post" name="form" onsubmit="return validateForm()">
+		<table align="center">
 			<tr>
 				<td>Authentication :</td>
-				<td><input type="text" id="admin" name="admin" required="required"></td>
+				<td><input type="text" id="admin" name="admin" ></td>
 			</tr>
 			<tr>
 				<td>Department :</td>
@@ -33,12 +35,12 @@
 			</tr>
 			<tr>
 				<td>Password :</td>
-				<td><input type="Password" id = "pass" name="pass" required="required" pattern=".{8,12}"></td>
+				<td><input type="Password" id = "pass" name="pass" ></td>
 			</tr>
 			<tr></tr>
 			<tr>
 				<td></td>
-				<td><input type="button"  id = "login" value="Login" name="login"></td>
+				<td><button type="submit">Login</button></td>
 			</tr>
 
 		</table>
