@@ -10,6 +10,15 @@ a:hover{
 }
 
 
+.card:hover{
+	background-color: rgb(119,136,153);
+		color: rgb(255,255,255);
+		font-size: 20px;
+}
+
+
+
+
 h1:hover
 {
 
@@ -21,6 +30,7 @@ h1{
 
 	color: rgb(255,140,0);
 	background-color: rgb(224,255,255);
+
 }
 
 body{
@@ -33,17 +43,6 @@ body:hover{
 }
 
 
-p{
-
-	background-color: rgb(173,216,230);
-}
-
-p:hover
-	{
-		background-color: rgb(119,136,153);
-		color: rgb(255,255,255);
-		font-size: 20px;
-	}
 
 
 header

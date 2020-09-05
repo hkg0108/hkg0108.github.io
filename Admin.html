@@ -2,21 +2,27 @@
 <html>
 <head>
 	<title>Admin</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="Register.css">
 	<header align="center" >
-
-		<a href="index.html"   ><label>|  Home  |</label></a>
-		<a href="About us.html"  ><label>  About Us |</label></a>
-		<a href="Login.html"  ><label>  Login |</label></a>
-		<a href="Contactus.html"  ><label>  Contact us |</label></a>
-
+		<<nav class="navbar navbar-expand-lg bg-dark" >
+		<a href="index.html" class="nav-link"  ><label>|  Home  |</label></a>
+		<a href="About us.html" class="nav-link" ><label>  About Us |</label></a>
+		<a href="Login.html" class="nav-link" ><label>  Login |</label></a>
+		<a href="Contactus.html" class="nav-link" ><label>  Contact us |</label></a>
+</nav>
 	</header>
 
 	<script type="text/javascript" src="validadmin.js"></script>
 </head>
 <body >
+	<div class="container.fluide">
 	<center><h1>Admin</h1></center>
-	<form action="Adminhome.html" method="get" name="form" onsubmit="return validateForm()">
+	<form action="Adminhome.html" method="post" name="form" onsubmit="return validateForm()">
+		<div class="nav bg-primary">
 		<table align="center">
 			<tr>
 				<td>Authentication :</td>
@@ -40,12 +46,13 @@
 			<tr></tr>
 			<tr>
 				<td></td>
-				<td><button type="submit">Login</button></td>
+				<td><button type="submit" class="btn btn-secondary">Login</button></td>
 			</tr>
 
 		</table>
+	</div>
 
 	</form>
-
+</div>
 </body>
 </html>

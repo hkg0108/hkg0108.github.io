@@ -1,71 +1,79 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Register page</title>
-	<link rel="stylesheet" type="text/css" href="Register.css">
-	<header>
-		<center>
-		<a href="Login.html" ><label>Back |</label></a>
-		<a href="Register.html" ><label>Register</label>
-		</center></a>
-	</header><br><br><br>
+    <title>Register page</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Register.css">
+    <header>
+    	<nav class="navbar navbar-expand-lg bg-dark" >
+        <center>
+            <a href="Login.html" class="nav-link"><label>Back |</label></a>
+          <!--  <a href="Register.html" class="nav-link"><label> Register </label> </a>-->
+		</center>
+	</nav>
+    </header><br><br><br>
 </head>
-<body >
-	<center> <h1>Register Here</h1></center>
-	<form action=#>
-		<table align="center" border="0">
 
-			<tr>
-				<td>Citizen Name : </td>
-				<td><input type="text" name="uname" required="required" id="uname" ></td>
+<body>
+	<div class="container.fluide">
 
-			</tr>
-			<tr>
-				<td>Password :</td>
-				<td><input type="Password" name="ps1" required="required" id="ps1" pattern="/.{8,12}"></td>
-			</tr>
-			<tr>
-				<td>Confirm Password :</td>
-				<td><input type="Password" id="ps2" name="ps2" required="required" pattern=".{8,12}"></td>
-			</tr>
-			<tr>
-				<td>Email Id :</td>
-				<td><input type="Email" name="email" required="required" placeholder="abc@gmail.com" id="email"></td>
-			</tr>
-			<tr>
-				<td>Contact Number : </td>
-				<td><input type="Number" name="phnno" required="required" id="phnno" pattern=".{10}"></td>
-			</tr>
-			<tr>
-				<td>Address :</td>
-				<td><textarea id="txtara"></textarea></td>
-			</tr>
-			<tr>
-				<td>Gender : </td>
-				<td><input type="radio" name="gen" id="gen" value="Male" checked="Male">Male<br><input type="radio" name="gen" id="gen"value = "Female" >Female</td>
-			</tr>
-			<tr></tr>
-			<tr>
-				<td></td>
-				<td colspan="2"><button type="button" onclick="Pass()">Submit</button></td>
-			</tr>
-		</table>
-		<br>
-		<br>
-		<table border="2" id="show" align="Center">
-			<tr>
-				<th>Name</th>
-				<th>Email</th>
-				<th>Phone Number</th>
-				<th>Adress</th>
-				<th>Gender</th>
-			</tr>
+    <center>
+        <h1>Register Here</h1>
+    </center>
+    <!--<form  action="#">-->
+    	<div class="card bg-primary">
+    <table align="center" border="0">
+
+        <tr>
+            <td>Citizen Name : </td>
+            <td><input type="text" name="uname" required="required" id="uname"></td>
+
+        </tr>
+        <tr>
+            <td>Password :</td>
+            <td><input type="Password" name="ps1" required="required" id="ps1" pattern="/.{8,12}"></td>
+        </tr>
+        <tr>
+            <td>Confirm Password :</td>
+            <td><input type="Password" id="ps2" name="ps2" required="required" pattern=".{8,12}"></td>
+        </tr>
+        <tr>
+            <td>Email Id :</td>
+            <td><input type="Email" name="email" required="required" placeholder="abc@gmail.com" id="email"></td>
+        </tr>
+        <tr>
+            <td>Contact Number : </td>
+            <td><input type="Number" name="phnno" required="required" id="phnno" pattern=".{10}"></td>
+        </tr>
+        <tr>
+            <td>Address :</td>
+            <td><textarea id="txtara"></textarea></td>
+        </tr>
+        <tr>
+            <td>Gender : </td>
+            <td><input type="radio"  name="gen" id="gen" value="Male" checked="male" >Male<br>
+            	<input type="radio"  name="gen" id="gen" value="Female">Female</td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td></td>
+            <td colspan="2"><button type="button"  class="btn btn-secondary">Submit</button></td>
+        </tr>
 
 
-		</table>
 
-<script src="Reg.js"></script>
-</form>
+    </table>
+
+    </div>
+        </div>
+</div>
+
+<center><a href="login1.html"><label>Proceed to Login</label></a></center>
 
 </body>
 </html>
