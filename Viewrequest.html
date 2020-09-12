@@ -2,22 +2,29 @@
 <html>
 <head>
 	<title>View Request</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="Register.css">
 	<header>
 		<center>
-			<a href="index.html"><label> | Home |</label></a>
-			<a href="Adminhome.html"><label>Citizen List |</label></a>
-			<a href="Viewrequest.html"><label>View Request |</label></a>
-			<a href="Giveresponse.html"><label>Give Response |</label></a>
-
-			<a href="index.html"><label>Logout |</label></a>
-			<br><br>
+			<nav class="navbar navbar-expand-lg bg-dark" >
+			<a href="index.html" class="nav-link"><label> | Home |</label></a>
+			<a href="Adminhome.html" class="nav-link"><label>Citizen List |</label></a>
+			<a href="Viewrequest.html" class="nav-link"><label>View Request |</label></a>
+			<a href="Giveresponse.html" class="nav-link"><label>Give Response |</label></a>
+			<a href="index.html" class="nav-link"><label>Logout |</label></a>
+			<br><br></nav>
 		</center>
 	</header>
 </head>
 <body>
+	<div class="container.fluide">
 	<center><h1>View Request</h1></center><br>
-	<table border="1">
+	<table border="2"  class="table-active table-dark table-hover">
+
 		<tr>
 			<td>C_number</td>
 			<td>C_name</td>
@@ -36,6 +43,6 @@
 		</tr>
 
 	</table>
-
+</div>
 </body>
 </html>

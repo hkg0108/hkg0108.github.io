@@ -2,30 +2,41 @@
 <html>
 <head>
 	<title>Profile</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="Register.css">
 	<header >
 		<center>
-			<a href="index.html" ><label> | Home |</label></a>
-			<a href="Profile.html" ><label>Profile |</label></a>
-			<a href="Request.html" ><label>Request |</label></a>
-			<a href="Response.html" ><label>Response |</label></a>
-			<a href="index.html" ><label>Logout |</label></a>
-			<br><br>
+			<nav class="navbar navbar-expand-lg bg-dark" >
+			<a href="index.html" class="nav-link" ><label> | Home |</label></a>
+			<a href="Profile.html" class="nav-link"  ><label>Profile |</label></a>
+			<a href="Request.html" class="nav-link"  ><label>Request |</label></a>
+			<a href="Response.html" class="nav-link"  ><label>Response |</label></a>
+			<a href="index.html" class="nav-link"  ><label>Logout |</label></a>
+			<br><br></nav>
 		</center>
 	</header>
-	<script>
+	<!--<script>
 		document.getElementById("cname").innerHTML = localStorage.getItem("text1");
 		document.getElementById("email").innerHTML = localStorage.getItem("text2");
 		document.getElementById("phnum").innerHTML = localStorage.getItem("text3");
 		document.getElementById("address").innerHTML = localStorage.getItem("text4");
 
-	</script>
+	</script>-->
 </head>
 <body >
-	<center><label><h1>Your Profile</h1></label></center>
+
+	<div class="container.fluide">
+	<center><h1>Your Profile</h1></center>
 
 	<form action="#" >
-				<table border="1">
+		<aside >
+		<div class="card" style="width:400px">
+    		<img class="card-img-top" src="profile.png" alt="Card image" style="width:100%">
+</div></aside>
+				<table border="1"  align ="center" class="table-active table-dark table-hover">
 			<tr>
 
 				<td>Cname</td>
@@ -37,15 +48,16 @@
 			</tr>
 			<tr>
 
-				<td id="cname"></td>
-				<td id="email"></td>
-				<td id="phnum"></td>
-				<td id="address"></td>
+				<td id="cname">Harsh Gandhi</td>
+				<td id="email">harsh01@gmail.com</td>
+				<td id="phnum">9854671230</td>
+				<td id="address">Surat</td>
 
 			</tr>
 		</table>
 
 
 	</form>
+</div>
 </body>
 </html>

@@ -2,20 +2,27 @@
 <html>
 <head>
 	<title>Give Response</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="Register.css">
 	<header>
 		<center>
-			<a href="index.html" ><label> | Home |</label></a>
-			<a href="Adminhome.html" ><label>Citizen List |</label></a>
-			<a href="Viewrequest.html" ><label>View Request |</label></a>
-			<a href="Giveresponse.html"><label>Give Response |</label></a>
-
-			<a href="home.html"><label>Logout |</label></a>
-			<br><br>
+			<nav class="navbar navbar-expand-lg bg-dark" >
+			<a href="index.html" class="nav-link" ><label> | Home |</label></a>
+			<a href="Adminhome.html" class="nav-link"  ><label>Citizen List |</label></a>
+			<a href="Viewrequest.html" class="nav-link"  ><label>View Request |</label></a>
+			<a href="Giveresponse.html" class="nav-link" ><label>Give Response |</label></a>
+			<a href="index.html" class="nav-link" ><label>Logout |</label></a>
+			<br><br></nav>
 		</center>
 	</header>
 </head>
 <body>
+	<div class="container.fluide">
+		<br><br>
 	<table>
 		<tr>
 			<td>Give response :</td>
@@ -26,12 +33,12 @@
 					<option value="Work in Process">Work in Process</option>
 				</select>
 			</td>
-				<td><input type="button" id="resp" value="Give Response" name="resp"></td>
+				<td><input type="button" id="resp" class="btn btn-outline-dark" value="Give Response" name="resp"></td>
 		</tr>
 
 
 
 	</table>
-
+</div>
 </body>
 </html>
