@@ -36,3 +36,10 @@ p:hover{
 	font-size: 20px;
 	background-color: rgb(0,0,0);
 }
+
+.error_form{
+
+	color: red;
+	font-size: 20px;
+	background-color: lightpink;
+}

@@ -9,15 +9,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="Register.css">
+    <script src="jquery-3.5.1.min.js"></script>
+
     <header>
     	<nav class="navbar navbar-expand-lg bg-dark" >
         <center>
             <a href="Login.html" class="nav-link"><label>Back |</label></a>
             <center><a href="login1.html"><label>Proceed to Login</label></a></center>
-          <!--  <a href="Register.html" class="nav-link"><label> Register </label> </a>-->
+
 		</center>
 	</nav>
     </header><br><br><br>
+    <script src="regvalid.js"></script>
 </head>
 
 <body>
@@ -26,26 +29,30 @@
     <center>
         <h1>Register Here</h1>
     </center>
-    <!--<form  action="#">-->
+
     	<div class="card bg-primary">
-    <table align="center" border="0">
+    <form id = "reg-form" method = "post"  action="#" >
+        <table align="center">
 
         <tr>
             <td>Citizen Name : </td>
-            <td><input type="text" name="uname" required="required" id="uname"></td>
+            <td><input type="text" name="uname" required="required"  pattern=".{5,20}" id="uname"></td><td><span class="error_form" id="cName_err_msg" ></span></td>
 
         </tr>
         <tr>
             <td>Password :</td>
-            <td><input type="Password" name="ps1" required="required" id="ps1" pattern="/.{8,12}"></td>
+            <td><input type="Password" name="ps1" required="required" id="ps1"></td>
+            <td><span class="error_form" id="pass_err_msg"></span></td>
         </tr>
         <tr>
             <td>Confirm Password :</td>
-            <td><input type="Password" id="ps2" name="ps2" required="required" pattern=".{8,12}"></td>
+            <td><input type="Password" id="ps2" name="ps2" required="required" ></td>
+            <td><span class="error_form" id="reenterpass_err_msg"></span></td>
         </tr>
         <tr>
             <td>Email Id :</td>
             <td><input type="Email" name="email" required="required" placeholder="abc@gmail.com" id="email"></td>
+            <td><span class="error_form" id="email_err_msg"></span></td>
         </tr>
         <tr>
             <td>Contact Number : </td>
@@ -63,7 +70,7 @@
         <tr></tr>
         <tr>
             <td></td>
-            <td colspan="2"><button type="button"  class="btn btn-secondary">Submit</button></td>
+            <td colspan="2"><button type="button"  class="btn btn-secondary" id="Submit">Submit</button></td><td></td>
         </tr>
 
 
